@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Mars rover
+		</title>
+		<!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+		<script src="MarsRover.js"></script>
+		<style style="text/css">
+			body
+			{
+				background-color:silver;
+			}
+
+			td
+			{
+				background-color:SeaGreen;
+			}
+			
+			.instructionArea
+			{
+				margin:0px auto;
+				text-align:center;
+			}
+			
+			.active
+			{
+				background-color:gold;
+			}
+			
+			.gameTitle
+			{
+				margin: 6px, auto;
+				text-align:center;
+			}
+			
+			.tbl
+			{
+				margin:0px auto;
+				width:800px;
+				height:800px;
+				background-color:Khaki;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="gameTitle">MarsRover Game Panel</h1>
+		<div class="instructionArea">
+			<label>Please input instructions:</label>
+			<input type="text" class="txt_Instruction" name="txt_Instruction" />
+			<input type="button" class="btn_Go" name="btn_Go" value="Go"></value>
+		</div>
+		<br />
+		<div class="divContainer">
+			<table class="tbl" name="tbl">
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td class="active"></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td>
+				</tr>
+			<table>
+		</div>
+	</body>
+	<script type="text/javascript">
+			bindEvents();
+	</script>
+</html>
